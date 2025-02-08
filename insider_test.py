@@ -20,7 +20,7 @@ SELENIUM_HUB_URL = "http://selenium-hub:4444/wd/hub"
 def driver():
     chrome_options = Options()
     chrome_options.add_argument("--start-maximized")
-    # chrome_options.add_argument("--headless")
+    chrome_options.add_argument("--headless")
     prefs = {"profile.default_content_setting_values.notifications": 1}
     chrome_options.add_experimental_option("prefs", prefs)
 
