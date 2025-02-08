@@ -24,8 +24,8 @@ def driver():
     prefs = {"profile.default_content_setting_values.notifications": 1}
     chrome_options.add_experimental_option("prefs", prefs)
 
-    __driver = webdriver.Chrome(options=chrome_options)
-    # __driver = webdriver.Remote(command_executor=SELENIUM_HUB_URL, options=chrome_options)
+    # __driver = webdriver.Chrome(options=chrome_options)
+    __driver = webdriver.Remote(command_executor=SELENIUM_HUB_URL, options=chrome_options)
 
     yield __driver
     __driver.quit()

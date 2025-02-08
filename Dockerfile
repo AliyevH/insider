@@ -14,4 +14,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Set environment variables for Selenium Hub
 ENV SELENIUM_HUB="http://selenium-hub:4444/wd/hub"
 
-# CMD ["pytest", "tests", "-vvvv"]
+CMD ["pytest", "tests", "-vvvv"]
